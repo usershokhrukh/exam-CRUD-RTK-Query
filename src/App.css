@@ -1,0 +1,119 @@
+.container {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: start;
+  height: 100vh;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 300 !important;
+
+  max-width: 1200px;
+  padding: 5% 10%;
+  width: 100%;
+  .container-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .container-loading, .user-name, .user-email {
+    font-weight: 300;
+  }
+
+  .container-users {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: end;
+  }
+
+  .user {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    background-color: rgba(29, 25, 41, 0.479);
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .user-top {
+    width: 100%;
+  }
+  .user-bottom {
+    display: flex;
+    gap: 10px;
+  }
+
+  .container-error {
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.123);
+    border-radius: 10px;
+    color: red;
+  }
+
+  .user-buttons {
+    padding: 5px 10px;
+    background-color: rgb(19, 19, 41);
+    border-radius: 5px;
+    color: white;
+  }
+
+  .user-email {
+    font-size: 14px;
+  }
+
+  .user-modal {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+  }
+
+  .user-form {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    background-color: rgb(41, 38, 38);
+    border-radius: 10px;
+  }
+
+  .user-form-bottom {
+    display: flex;
+    gap: 5px;
+  }
+
+  .user-form-button{
+    padding: 5px;
+    background-color: rgb(44, 41, 41);
+    border-radius: 5px;
+    color: white;
+  }
+
+  .user-form-input{
+    padding: 8px;
+    border-radius: 8px;
+    background-color: rgb(71, 69, 69);
+    color: white;
+    font-size: 14px;
+  }
+
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
