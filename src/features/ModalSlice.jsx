@@ -1,32 +1,27 @@
-import { createSlice } from "@reduxjs/toolkit";
-import { act } from "react";
-
-
+import {createSlice} from "@reduxjs/toolkit";
 const modalSlice = createSlice({
   name: "modalSlice",
   initialState: {
     modals: false,
     user: {},
-    type:"none"
-  },  
+    type: "none",
+  },
   reducers: {
     modalsToggle: (state) => {
-      state.modals = !state.modals
+      state.modals = !state.modals;
     },
     userAdd: (state, action) => {
-      state.user = action?.payload
+      state.user = action?.payload;
     },
     clearUser: (state) => {
-      state.user = {}
+      state.user = {};
     },
-    typeChange: (state, action) =>  {
-      state.type = action.payload
-    }
-  }
-})
+    typeChange: (state, action) => {
+      state.type = action.payload;
+    },
+  },
+});
 
-
-
-
-export default modalSlice.reducer
-export const {modalsToggle, userAdd, clearUser, typeChange} = modalSlice.actions
+export default modalSlice.reducer;
+export const {modalsToggle, userAdd, clearUser, typeChange} =
+  modalSlice.actions;
